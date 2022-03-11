@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Link collector",
+    "version": "1.0.0",
+    "description": "Collect links and log",
+    "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["content.js"]
+    }],
+    "permissions": ["webNavigation", "tabs", "contextMenus", "activeTab", "storage"]
+}
